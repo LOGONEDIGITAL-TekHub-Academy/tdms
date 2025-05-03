@@ -9,12 +9,12 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
-public class RegisterUserService {
+public class RegisterUser {
 
     private final PasswordEncoder passwordEncoder;
     private final UserService userService;
 
-    public RegisterUserService(PasswordEncoder passwordEncoder, UserService userService) {
+    public RegisterUser(PasswordEncoder passwordEncoder, UserService userService) {
         this.passwordEncoder = passwordEncoder;
         this.userService = userService;
     }

@@ -10,6 +10,8 @@ import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+
+import java.security.Principal;
 import java.util.Collection;
 import java.util.Set;
 import java.util.UUID;
@@ -22,7 +24,7 @@ import java.util.stream.Collectors;
 @Builder
 @Table(name = "tb_user")
 @Entity
-public class UserEntity implements UserDetails{
+public class UserEntity implements UserDetails, Principal {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -109,5 +111,14 @@ public class UserEntity implements UserDetails{
                 .accountLocked(user.isAccountLocked())
                 .roles(user.getRoles())
                 .build();
+    }
+
+    public String fullName() {
+        return this.firstName + " " + this.lastName;
+    }
+
+    @Override
+    public String getName() {
+        return this.email;
     }
 }

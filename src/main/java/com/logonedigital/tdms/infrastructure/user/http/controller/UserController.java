@@ -1,6 +1,6 @@
 package com.logonedigital.tdms.infrastructure.user.http.controller;
 
-import com.logonedigital.tdms.application.usecases.RegisterUserService;
+import com.logonedigital.tdms.application.usecases.RegisterUser;
 import com.logonedigital.tdms.infrastructure.user.http.dto.RegisterRequest;
 import com.logonedigital.tdms.shared.ApiResponse;
 import jakarta.validation.Valid;
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/auth/register")
 @RestController
 public class UserController {
-    private final RegisterUserService userService;
-    public UserController(RegisterUserService service) {
+    private final RegisterUser userService;
+    public UserController(RegisterUser service) {
         this.userService = service;
     }
 
