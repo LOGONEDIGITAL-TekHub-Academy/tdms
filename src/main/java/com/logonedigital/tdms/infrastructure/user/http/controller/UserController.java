@@ -1,6 +1,6 @@
 package com.logonedigital.tdms.infrastructure.user.http.controller;
 
-import com.logonedigital.tdms.application.user.usecases.RegisterUserService;
+import com.logonedigital.tdms.application.usecases.RegisterUserService;
 import com.logonedigital.tdms.infrastructure.user.http.dto.RegisterRequest;
 import com.logonedigital.tdms.shared.ApiResponse;
 import jakarta.validation.Valid;

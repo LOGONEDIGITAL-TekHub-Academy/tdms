@@ -1,4 +1,4 @@
-package com.logonedigital.tdms.application.user.usecases;
+package com.logonedigital.tdms.application.usecases;
 
 import com.logonedigital.tdms.domain.shared.vo.Email;
 import com.logonedigital.tdms.domain.shared.vo.FullName;

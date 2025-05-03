@@ -21,3 +21,9 @@ spring:
         auth: false  # Disable auth unless you configured MailDev with credentials
         starttls:
           enable: false  # MailDev usually doesn't support TLS in local dev
+
+application:
+  security:
+    jwt:
+      secret-key: 36541236987412589632587412563214569874563211mySecretKeyGenerator78
+      expiration: 86400000
