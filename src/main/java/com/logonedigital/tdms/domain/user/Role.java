@@ -1,4 +1,4 @@
-package com.logonedigital.tdms.domain.model.user;
+package com.logonedigital.tdms.domain.user;
 
 public enum Role {
     TECHDREAMER("ROLE_TECHDREAMER"),

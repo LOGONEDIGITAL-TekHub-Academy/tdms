@@ -1,7 +1,7 @@
-package com.logonedigital.tdms.domain.model.user;
+package com.logonedigital.tdms.domain.user;
 
-import com.logonedigital.tdms.domain.model.shared.vo.Email;
-import com.logonedigital.tdms.domain.model.shared.vo.FullName;
+import com.logonedigital.tdms.domain.shared.vo.Email;
+import com.logonedigital.tdms.domain.shared.vo.FullName;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
