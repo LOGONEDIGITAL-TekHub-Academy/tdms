@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tdms_db
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl_auto: update
+    show_sql: true
+    properties:
+      hibernate:
+        format-sql: true
+  mail:
+    host: localhost
+    port: 15432
+    properties:
+      mail:
+        smtp:
+          trust: "*"
+        auth: false  # Disable auth unless you configured MailDev with credentials
+        starttls:
+          enable: false  # MailDev usually doesn't support TLS in local dev
