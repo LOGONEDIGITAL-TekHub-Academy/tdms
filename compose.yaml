@@ -38,7 +38,7 @@ services:
       - masterclass-tdms
 
   mail-dev:
-    container_name: mail-dev-sms
+    container_name: mail-dev-tdms
     image: maildev/maildev
     ports:
       - "1080:1080"

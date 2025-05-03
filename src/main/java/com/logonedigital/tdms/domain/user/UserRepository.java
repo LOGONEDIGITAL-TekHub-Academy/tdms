@@ -1,4 +1,4 @@
-package com.logonedigital.tdms.domain.model.user;
+package com.logonedigital.tdms.domain.user;
 
 public interface UserRepository {
     UserDomain save(UserDomain user);

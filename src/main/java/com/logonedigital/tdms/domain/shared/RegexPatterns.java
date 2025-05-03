@@ -1,4 +1,4 @@
-package com.logonedigital.tdms.domain.model.shared;
+package com.logonedigital.tdms.domain.shared;
 
 public final class RegexPatterns {
     public static final String EMAIL = "^[A-Za-z0-9+_.-]+@(.+)$";

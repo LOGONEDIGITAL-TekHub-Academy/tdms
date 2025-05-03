@@ -1,0 +1,8 @@
+//TODO Send register Request with error in firstName (firstname)
+//TODO Request without lastName domain error (blank)
+//TODO authenticate user use-case Reverse programming AuthenticateUserController
+//TODO JwtService JwtFilter UserDetailsServiceImpl UserDetailsService
+//TODO Exception in Application
+//TODO Explain Spring Security vocabs
+//TODO Principal, UserPrincipal, UserDetails
+//TODO JpaAuditing Base Entity

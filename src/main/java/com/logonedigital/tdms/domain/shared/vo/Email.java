@@ -1,6 +1,6 @@
-package com.logonedigital.tdms.domain.model.shared.vo;
+package com.logonedigital.tdms.domain.shared.vo;
 
-import com.logonedigital.tdms.domain.model.shared.RegexPatterns;
+import com.logonedigital.tdms.domain.shared.RegexPatterns;
 import lombok.NonNull;
 
 public record Email(@NonNull String value) {
