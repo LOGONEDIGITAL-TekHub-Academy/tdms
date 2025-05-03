@@ -1,12 +1,16 @@
-package com.logonedigital.tdms.domain.model.user;
+package com.logonedigital.tdms.domain.user;
 
-import com.logonedigital.tdms.domain.model.shared.vo.Email;
-import com.logonedigital.tdms.domain.model.shared.vo.FullName;
+import com.logonedigital.tdms.domain.shared.vo.Email;
+import com.logonedigital.tdms.domain.shared.vo.FullName;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Set;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Builder
 public class UserDomain {

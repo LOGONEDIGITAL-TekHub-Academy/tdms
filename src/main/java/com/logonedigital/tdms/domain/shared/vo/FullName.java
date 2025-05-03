@@ -1,4 +1,4 @@
-package com.logonedigital.tdms.domain.model.shared.vo;
+package com.logonedigital.tdms.domain.shared.vo;
 
 import lombok.NonNull;
 
