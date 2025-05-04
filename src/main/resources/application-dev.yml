@@ -5,6 +5,7 @@ spring:
     password: root
     driver-class-name: org.postgresql.Driver
   jpa:
+    open-in-view: false
     hibernate:
       ddl_auto: create-drop
     show_sql: true

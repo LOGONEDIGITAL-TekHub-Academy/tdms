@@ -20,19 +20,19 @@ public class UserController {
 
     @PostMapping("/admin")
     public ResponseEntity<ApiResponse> saveAdmin(@RequestBody @Valid RegisterRequest request) {
-        userService.saveAdmin(request);
-        return ResponseEntity.ok(new ApiResponse("Successfully registered user", null));
+        var user =userService.saveAdmin(request);
+        return ResponseEntity.ok(new ApiResponse("Successfully registered user", user.getUserId()));
     }
 
     @PostMapping("/techdreamer")
     public ResponseEntity<ApiResponse> saveTechDreamer(@RequestBody @Valid RegisterRequest request) {
-        userService.saveTechDreamer(request);
-        return ResponseEntity.ok(new ApiResponse("Successfully registered user", null));
+        var user = userService.saveTechDreamer(request);
+        return ResponseEntity.ok(new ApiResponse("Successfully registered user", user.getUserId()));
     }
 
     @PostMapping("/techmentor")
     public ResponseEntity<ApiResponse> saveTechMentor(@RequestBody @Valid RegisterRequest request) {
-        userService.saveTechDreamer(request);
-        return ResponseEntity.ok(new ApiResponse("Successfully registered user", null));
+        var user = userService.saveTechMentor(request);
+        return ResponseEntity.ok(new ApiResponse("Successfully registered user", user.getUserId()));
     }
 }
